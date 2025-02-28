@@ -1,6 +1,6 @@
-import DefaultImg from '../../assets/img/default-150x150.png';
+import DefaultImg from '../assets/img/default-150x150.png';
 
-const Home = () => {
+const Dashboard3 = () => {
   return (
     <div>
       <div className='content-wrapper'>
@@ -293,4 +293,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Dashboard3;

@@ -1,13 +1,15 @@
+import { useNavigate } from 'react-router-dom';
 import UserIMG from '../../assets/img/user2-160x160.jpg';
 import AdminLTELogo from '../../assets/img/AdminLTELogo.png';
 
 const Sidenav = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div>
         <aside className='main-sidebar sidebar-dark-primary elevation-4'>
           {/* Brand Logo */}
-          <a href='index3.html' className='brand-link'>
+          <a onClick={() => navigate('/dashboard1')} className='brand-link'>
             <img
               src={AdminLTELogo}
               alt='AdminLTE Logo'
@@ -28,7 +30,7 @@ const Sidenav = () => {
                 />
               </div>
               <div className='info'>
-                <a href='#' className='d-block'>
+                <a onClick={() => navigate('/dashboard1')} className='d-block'>
                   Alexander Pierce
                 </a>
               </div>
@@ -60,7 +62,10 @@ const Sidenav = () => {
                 {/* Add icons to the links using the .nav-icon class
        with font-awesome or any other icon font library */}
                 <li className='nav-item menu-open'>
-                  <a href='#' className='nav-link active'>
+                  <a
+                    onClick={() => navigate('/dashboard1')}
+                    className='nav-link active'
+                  >
                     <i className='nav-icon fas fa-tachometer-alt' />
                     <p>
                       Dashboard
@@ -69,19 +74,28 @@ const Sidenav = () => {
                   </a>
                   <ul className='nav nav-treeview'>
                     <li className='nav-item'>
-                      <a href='./index.html' className='nav-link active'>
+                      <a
+                        onClick={() => navigate('/dashboard1')}
+                        className='nav-link active'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Dashboard v1</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='./index2.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/dashboard2')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Dashboard v2</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='./index3.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/dashboard3')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Dashboard v3</p>
                       </a>

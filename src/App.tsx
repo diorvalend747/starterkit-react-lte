@@ -1,17 +1,13 @@
-// import './App.css';
-import Header from './components/header';
-import Footer from './components/footer';
-import Home from './components/home';
-import Sidebar from './components/sidebar';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import DefaultLayout from './pages/DefaultLayout';
 
 const App = () => {
   return (
-    <div className='wrapper'>
-      <Header />
-      <Home />
-      <Footer />
-      <Sidebar />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='*' element={<DefaultLayout />} />
+      </Routes>
+    </Router>
   );
 };
 
