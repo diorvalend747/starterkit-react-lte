@@ -1,4 +1,4 @@
-import DefaultImg from '../assets/img/default-150x150.png';
+import DefaultImg from '../../assets/img/default-150x150.png';
 
 const Dashboard3 = () => {
   return (

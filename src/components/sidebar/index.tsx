@@ -9,7 +9,7 @@ const Sidenav = () => {
       <div>
         <aside className='main-sidebar sidebar-dark-primary elevation-4'>
           {/* Brand Logo */}
-          <a onClick={() => navigate('/dashboard1')} className='brand-link'>
+          <a onClick={() => navigate('/dashboard/v1')} className='brand-link'>
             <img
               src={AdminLTELogo}
               alt='AdminLTE Logo'
@@ -30,7 +30,10 @@ const Sidenav = () => {
                 />
               </div>
               <div className='info'>
-                <a onClick={() => navigate('/dashboard1')} className='d-block'>
+                <a
+                  onClick={() => navigate('/dashboard/v1')}
+                  className='d-block'
+                >
                   Alexander Pierce
                 </a>
               </div>
@@ -63,7 +66,7 @@ const Sidenav = () => {
        with font-awesome or any other icon font library */}
                 <li className='nav-item menu-open'>
                   <a
-                    onClick={() => navigate('/dashboard1')}
+                    onClick={() => navigate('/dashboard/v1')}
                     className='nav-link active'
                   >
                     <i className='nav-icon fas fa-tachometer-alt' />
@@ -75,8 +78,9 @@ const Sidenav = () => {
                   <ul className='nav nav-treeview'>
                     <li className='nav-item'>
                       <a
-                        onClick={() => navigate('/dashboard1')}
-                        className='nav-link active'
+                        onClick={() => navigate('/dashboard/v1')}
+                        // className='nav-link active'
+                        className='nav-link'
                       >
                         <i className='far fa-circle nav-icon' />
                         <p>Dashboard v1</p>
@@ -84,7 +88,7 @@ const Sidenav = () => {
                     </li>
                     <li className='nav-item'>
                       <a
-                        onClick={() => navigate('/dashboard2')}
+                        onClick={() => navigate('/dashboard/v2')}
                         className='nav-link'
                       >
                         <i className='far fa-circle nav-icon' />
@@ -93,7 +97,7 @@ const Sidenav = () => {
                     </li>
                     <li className='nav-item'>
                       <a
-                        onClick={() => navigate('/dashboard3')}
+                        onClick={() => navigate('/dashboard/v3')}
                         className='nav-link'
                       >
                         <i className='far fa-circle nav-icon' />
@@ -236,49 +240,73 @@ const Sidenav = () => {
                   </a>
                   <ul className='nav nav-treeview'>
                     <li className='nav-item'>
-                      <a href='pages/UI/general.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/ui/general')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>General</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/UI/icons.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/ui/icons')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Icons</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/UI/buttons.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/ui/buttons')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Buttons</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/UI/sliders.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/ui/sliders')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Sliders</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/UI/modals.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/ui/modals')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Modals &amp; Alerts</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/UI/navbar.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/ui/navbar')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Navbar &amp; Tabs</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/UI/timeline.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/ui/timeline')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Timeline</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/UI/ribbons.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/ui/ribbons')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Ribbons</p>
                       </a>
@@ -295,26 +323,35 @@ const Sidenav = () => {
                   </a>
                   <ul className='nav nav-treeview'>
                     <li className='nav-item'>
-                      <a href='pages/forms/general.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/form/general')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>General Elements</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/forms/advanced.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/form/advance')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Advanced Elements</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/forms/editors.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/form/editors')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Editors</p>
                       </a>
                     </li>
                     <li className='nav-item'>
                       <a
-                        href='pages/forms/validation.html'
+                        onClick={() => navigate('/form/validation')}
                         className='nav-link'
                       >
                         <i className='far fa-circle nav-icon' />
@@ -333,19 +370,28 @@ const Sidenav = () => {
                   </a>
                   <ul className='nav nav-treeview'>
                     <li className='nav-item'>
-                      <a href='pages/tables/simple.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/tables/simple-tables')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>Simple Tables</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/tables/data.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/tables/data-tables')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>DataTables</p>
                       </a>
                     </li>
                     <li className='nav-item'>
-                      <a href='pages/tables/jsgrid.html' className='nav-link'>
+                      <a
+                        onClick={() => navigate('/tables/jsgrid')}
+                        className='nav-link'
+                      >
                         <i className='far fa-circle nav-icon' />
                         <p>jsGrid</p>
                       </a>

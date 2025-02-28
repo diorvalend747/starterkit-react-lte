@@ -1,10 +1,10 @@
-import Avatar1 from '../assets/img/user1-128x128.jpg';
-import Avatar3 from '../assets/img/user3-128x128.jpg';
-import Avatar5 from '../assets/img/user5-128x128.jpg';
-import Avatar6 from '../assets/img/user6-128x128.jpg';
-import Avatar7 from '../assets/img/user7-128x128.jpg';
-import Avatar8 from '../assets/img/user8-128x128.jpg';
-import DefaultImg from '../assets/img/default-150x150.png';
+import Avatar1 from '../../assets/img/user1-128x128.jpg';
+import Avatar3 from '../../assets/img/user3-128x128.jpg';
+import Avatar5 from '../../assets/img/user5-128x128.jpg';
+import Avatar6 from '../../assets/img/user6-128x128.jpg';
+import Avatar7 from '../../assets/img/user7-128x128.jpg';
+import Avatar8 from '../../assets/img/user8-128x128.jpg';
+import DefaultImg from '../../assets/img/default-150x150.png';
 
 const Dashboard2 = () => {
   return (
