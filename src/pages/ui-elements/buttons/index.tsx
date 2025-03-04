@@ -1,26 +1,9 @@
+import { ContentHeader } from '../../../components';
+
 const Buttons = () => {
   return (
-    <div className='content-wrapper'>
-      {/* Content Header (Page header) */}
-      <section className='content-header'>
-        <div className='container-fluid'>
-          <div className='row mb-2'>
-            <div className='col-sm-6'>
-              <h1>Buttons</h1>
-            </div>
-            <div className='col-sm-6'>
-              <ol className='breadcrumb float-sm-right'>
-                <li className='breadcrumb-item'>
-                  <a href='#'>Home</a>
-                </li>
-                <li className='breadcrumb-item active'>Buttons</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        {/* /.container-fluid */}
-      </section>
-      {/* Main content */}
+    <div className='content'>
+      <ContentHeader title='Buttons' />
       <section className='content'>
         <div className='container-fluid'>
           <div className='row'>
@@ -28,7 +11,7 @@ const Buttons = () => {
               <div className='card card-primary card-outline'>
                 <div className='card-header'>
                   <h3 className='card-title'>
-                    <i className='fas fa-edit' />
+                    <i className='fas fa-edit pr-2' />
                     Buttons
                   </h3>
                 </div>
@@ -2874,7 +2857,6 @@ const Buttons = () => {
         </div>
         {/* /.container-fluid */}
       </section>
-      {/* /.content */}
     </div>
   );
 };

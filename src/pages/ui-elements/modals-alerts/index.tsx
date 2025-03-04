@@ -1,29 +1,10 @@
+import { ContentHeader } from '../../../components';
+
 const ModalsAlerts = () => {
   return (
-    <div className='content-wrapper'>
-      {/* Content Header (Page header) */}
-      <section className='content-header'>
-        <div className='container-fluid'>
-          <div className='row mb-2'>
-            <div className='col-sm-6'>
-              <h1>
-                Modals &amp; Alerts
-                <small>new</small>
-              </h1>
-            </div>
-            <div className='col-sm-6'>
-              <ol className='breadcrumb float-sm-right'>
-                <li className='breadcrumb-item'>
-                  <a href='#'>Home</a>
-                </li>
-                <li className='breadcrumb-item active'>Modals &amp; Alerts</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        {/* /.container-fluid */}
-      </section>
-      {/* Main content */}
+    <div className='content'>
+      <ContentHeader title='Modals &amp; Alerts' />
+
       <section className='content'>
         <div className='container-fluid'>
           <div className='row'>
@@ -31,7 +12,7 @@ const ModalsAlerts = () => {
               <div className='card card-primary card-outline'>
                 <div className='card-header'>
                   <h3 className='card-title'>
-                    <i className='fas fa-edit' />
+                    <i className='fas fa-edit pr-2' />
                     Modal Examples
                   </h3>
                 </div>
@@ -140,7 +121,7 @@ const ModalsAlerts = () => {
               <div className='card card-info card-outline'>
                 <div className='card-header'>
                   <h3 className='card-title'>
-                    <i className='fas fa-edit' />
+                    <i className='fas fa-edit pr-2' />
                     Toasts Examples <small>built in AdminLTE</small>
                   </h3>
                 </div>
@@ -233,7 +214,7 @@ const ModalsAlerts = () => {
               <div className='card card-success card-outline'>
                 <div className='card-header'>
                   <h3 className='card-title'>
-                    <i className='fas fa-edit' />
+                    <i className='fas fa-edit pr-2' />
                     SweetAlert2 Examples
                   </h3>
                 </div>
@@ -280,7 +261,7 @@ const ModalsAlerts = () => {
               <div className='card card-warning card-outline'>
                 <div className='card-header'>
                   <h3 className='card-title'>
-                    <i className='fas fa-edit' />
+                    <i className='fas fa-edit pr-2' />
                     Toastr Examples
                   </h3>
                 </div>
@@ -319,11 +300,9 @@ const ModalsAlerts = () => {
                 {/* /.card */}
               </div>
             </div>
-            {/* /.col */}
           </div>
-          {/* ./row */}
         </div>
-        {/* /.container-fluid */}
+
         <div className='modal fade' id='modal-default'>
           <div className='modal-dialog'>
             <div className='modal-content'>
@@ -354,11 +333,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-overlay'>
           <div className='modal-dialog'>
             <div className='modal-content'>
@@ -392,11 +369,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-primary'>
           <div className='modal-dialog'>
             <div className='modal-content bg-primary'>
@@ -427,11 +402,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-secondary'>
           <div className='modal-dialog'>
             <div className='modal-content bg-secondary'>
@@ -462,11 +435,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-info'>
           <div className='modal-dialog'>
             <div className='modal-content bg-info'>
@@ -497,11 +468,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-warning'>
           <div className='modal-dialog'>
             <div className='modal-content bg-warning'>
@@ -532,11 +501,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-success'>
           <div className='modal-dialog'>
             <div className='modal-content bg-success'>
@@ -567,11 +534,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-danger'>
           <div className='modal-dialog'>
             <div className='modal-content bg-danger'>
@@ -602,11 +567,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-sm'>
           <div className='modal-dialog modal-sm'>
             <div className='modal-content'>
@@ -637,11 +600,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-lg'>
           <div className='modal-dialog modal-lg'>
             <div className='modal-content'>
@@ -672,11 +633,9 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
+
         <div className='modal fade' id='modal-xl'>
           <div className='modal-dialog modal-xl'>
             <div className='modal-content'>
@@ -707,11 +666,8 @@ const ModalsAlerts = () => {
                 </button>
               </div>
             </div>
-            {/* /.modal-content */}
           </div>
-          {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
       </section>
       {/* /.content */}
     </div>

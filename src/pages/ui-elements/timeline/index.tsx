@@ -1,39 +1,19 @@
+import { ContentHeader } from '../../../components';
+
 const Timeline = () => {
   return (
-    <div className='content-wrapper'>
-      {/* Content Header (Page header) */}
-      <section className='content-header'>
-        <div className='container-fluid'>
-          <div className='row mb-2'>
-            <div className='col-sm-6'>
-              <h1>Timeline</h1>
-            </div>
-            <div className='col-sm-6'>
-              <ol className='breadcrumb float-sm-right'>
-                <li className='breadcrumb-item'>
-                  <a href='#'>Home</a>
-                </li>
-                <li className='breadcrumb-item active'>Timeline</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        {/* /.container-fluid */}
-      </section>
-      {/* Main content */}
+    <div className='content'>
+      <ContentHeader title='Timeline' />
+
       <section className='content'>
         <div className='container-fluid'>
-          {/* Timelime example  */}
           <div className='row'>
             <div className='col-md-12'>
-              {/* The time line */}
               <div className='timeline'>
-                {/* timeline time label */}
                 <div className='time-label'>
                   <span className='bg-red'>10 Feb. 2014</span>
                 </div>
-                {/* /.timeline-label */}
-                {/* timeline item */}
+
                 <div>
                   <i className='fas fa-envelope bg-blue' />
                   <div className='timeline-item'>

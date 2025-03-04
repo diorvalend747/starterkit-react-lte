@@ -1,33 +1,16 @@
+import { ContentHeader } from '../../../components';
+
 const UiElementGeneral = () => {
   return (
-    <div className='content-wrapper'>
-      {/* Content Header (Page header) */}
-      <section className='content-header'>
-        <div className='container-fluid'>
-          <div className='row mb-2'>
-            <div className='col-sm-6'>
-              <h1>Inline Charts</h1>
-            </div>
-            <div className='col-sm-6'>
-              <ol className='breadcrumb float-sm-right'>
-                <li className='breadcrumb-item'>
-                  <a href='#'>Home</a>
-                </li>
-                <li className='breadcrumb-item active'>Inline Charts</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        {/* /.container-fluid */}
-      </section>
-      {/* Main content */}
+    <div className='content'>
+      <ContentHeader title='Inline Charts' />
+
       <section className='content'>
         <div className='container-fluid'>
-          {/* COLOR PALETTE */}
           <div className='card card-default color-palette-box'>
             <div className='card-header'>
               <h3 className='card-title'>
-                <i className='fas fa-tag' />
+                <i className='fas fa-tag pr-2' />
                 Color Palette
               </h3>
             </div>
@@ -35,7 +18,7 @@ const UiElementGeneral = () => {
               <div className='col-12'>
                 <h5>Theme Colors</h5>
               </div>
-              {/* /.col-12 */}
+
               <div className='row'>
                 <div className='col-sm-4 col-md-2'>
                   <h4 className='text-center'>Primary</h4>
@@ -308,8 +291,7 @@ const UiElementGeneral = () => {
             </div>
             {/* /.card-body */}
           </div>
-          {/* /.card */}
-          {/* START ALERTS AND CALLOUTS */}
+
           <h5 className='mt-4 mb-2'>Alerts and Callouts</h5>
           <div className='row'>
             <div className='col-md-6'>
@@ -320,7 +302,7 @@ const UiElementGeneral = () => {
                     Alerts
                   </h3>
                 </div>
-                {/* /.card-header */}
+
                 <div className='card-body'>
                   <div className='alert alert-danger alert-dismissible'>
                     <button
