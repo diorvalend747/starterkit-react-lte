@@ -1,9 +1,14 @@
-import { Navigate, Outlet } from 'react-router-dom';
-import { useAppSelector } from '../store/store';
+import { Navigate } from 'react-router-dom';
+import { useAuth } from '../components/AuthContext';
 
-const PrivateRoute = () => {
-  const isLoggedIn = useAppSelector((state) => state.ui.user);
-  return isLoggedIn ? <Outlet /> : <Navigate to={`/login`} />;
+interface AuthProviderProps {
+  children: React.ReactNode;
+}
+
+const PrivateRoute = ({ children }: AuthProviderProps) => {
+  const { user } = useAuth();
+
+  return user ? children : <Navigate to='/login' />;
 };
 
 export default PrivateRoute;
